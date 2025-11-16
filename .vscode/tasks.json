@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Project",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+
+                "${fileDirname}\\main.cpp",
+                "${fileDirname}\\alien.cpp",
+                "${fileDirname}\\crew_sort.cpp",
+                "${fileDirname}\\crewmember.cpp",
+                "${fileDirname}\\file_parser.cpp",
+                "${fileDirname}\\human.cpp",
+                "${fileDirname}\\telepathiclinktest.cpp",
+                "${fileDirname}\\tests.cpp",
+                "-o",
+                "${fileDirname}\\program.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
